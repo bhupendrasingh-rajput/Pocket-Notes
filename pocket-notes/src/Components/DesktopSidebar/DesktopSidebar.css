@@ -1,0 +1,92 @@
+.sidebar {
+    position: relative;
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 30%;
+}
+
+.sidebar-heading {
+    position: relative;
+    /* border:1px solid red; */
+    height: 15%;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.group-names {
+    /* border: 1px solid red; */
+    position: relative;
+    height: 85%;
+    overflow-y: auto;
+}
+
+.group-names::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.group-names::-webkit-scrollbar-track {
+    background-color: #D9D9D9;
+    border-radius: 1rem;
+}
+
+.group-names::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(89, 84, 84, 0.133);
+    border-radius: 1rem;
+}
+
+.group {
+    position: relative;
+    height: 12%;
+    width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5%;
+    padding: 0 10%;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 2px;
+    background: linear-gradient(90deg, transparent 50%, rgba(90, 190, 158, 0.17) 50%);
+    background-size: 200% 100%;
+    transition: background-position 0.5s ease;
+}
+
+.group:hover{
+    background-position: -100% 0;
+}
+
+.group-names .selected-group {
+    background-color: rgba(47, 47, 47, 0.17);
+}
+
+.group-name-logo {
+    height: 90%;
+    aspect-ratio: 1;
+    border-radius: 3rem;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 120%;
+}
+
+.addgroup-btn {
+    position: fixed;
+    cursor: pointer;
+    height: 10%;
+    aspect-ratio: 1;
+    bottom: 3%;
+    left: 21.5%;
+    border-radius: 5rem;
+    background: rgba(22, 0, 139, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+}

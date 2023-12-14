@@ -1,0 +1,13 @@
+.notespage{
+    position: relative;
+    width: 70%;
+    height: 100vh;
+}
+
+@media (max-width: 425px) {
+    .notespage{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+}
