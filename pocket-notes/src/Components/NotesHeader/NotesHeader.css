@@ -5,20 +5,12 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-inline: 4%;
+    gap: 3%;
     color: #FFFFFF;
     font-weight: 500;
     font-size: 1.2rem;
-}
-
-.left-side{
-    height: 100%;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 3%;
 }
 
 .header-group-name-logo{

@@ -26,8 +26,6 @@ const Notespage = () => {
       <NotesHeader
         selectedGroup={selectedGroup}
         setSelectedGroup={setSelectedGroup}
-        parentGroup={parentGroup}
-        setParentGroup={setParentGroup}
       />
 
       <NotesDisplay
