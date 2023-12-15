@@ -36,16 +36,14 @@
 }
 
 .notes-content-text{
-    /* border: 1px solid black; */
     height: auto;
     width: 100%;
 }
 
 .notes-content-date-time{
-    /* border: 1px solid black; */
     width: 100%;
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: flex-end;
     height: 2rem;
     color: #353535;

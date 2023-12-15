@@ -43,6 +43,7 @@
 
 .selected {
     scale: 1.3;
+    box-shadow: 0 0 25px 5px #11d31475;
 }
 
 #first {

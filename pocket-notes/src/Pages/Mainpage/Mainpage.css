@@ -1,6 +1,5 @@
 .mainpage {
     position: relative;
-    /* border: 2px solid black; */
     width: 70%;
     height: 100%;
     padding: 0 12%;
@@ -8,7 +7,6 @@
 }
 
 .mainpage-upper {
-    /* border: 1px solid black; */
     height: 60%;
     width: 100%;
     display: flex;
@@ -24,7 +22,6 @@
 }
 
 .mainpage-lower {
-    /* border: 1px solid black; */
     height: 40%;
     width: 100%;
     display: flex;
@@ -35,7 +32,6 @@
 }
 
 .mainpage-content{
-    /* border: 1px solid red; */
     height: 35%;
     width: 100%;
     display: flex;
@@ -56,7 +52,6 @@
 }
 
 .mainpage-footer{
-    /* border: 1px solid red; */
     width: 100%;
     height: 20%;
     display: flex;

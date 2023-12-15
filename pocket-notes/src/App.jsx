@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import NoteState from './Context/NotesState';
 import DesktopView from './Views/DesktopView/DesktopView';
 import MobileView from './Views/MobileView/MobileView';
@@ -10,6 +10,7 @@ function App() {
   const handleScreenSize = () => {
     setScreenSize(window.innerWidth);
   }
+  
   window.addEventListener('resize', handleScreenSize);
   return (
     <NoteState>

@@ -22,6 +22,7 @@ const modalStyles = {
         fontWeight: '500',
         fontSize: '1rem',
         wordSpacing: '0.1rem',
+        animation: 'fadeInOut 0.3s ease-in-out',
     },
     overlay: {
         backgroundColor: 'rgba(47, 47, 47, 0.75)',
@@ -42,7 +43,6 @@ const DesktopPopUp = ({ isOpen, onRequestClose, onColorClick, onCreate, groupNam
 
     return (
         <Modal
-            portalClassName='cutom-modal'
             isOpen={isOpen}
             shouldCloseOnOverlayClick={true}
             onRequestClose={onRequestClose}

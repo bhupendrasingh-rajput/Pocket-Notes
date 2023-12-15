@@ -20,9 +20,21 @@ const timeWithFormat = (timeString) => {
   return `${hours}:${minutes} ${ampm}`;
 }
 
-const NotesDisplay = ({ selectedGroup, parentGroup }) => {
+const NotesDisplay = ({ selectedGroup, parentGroup, setParentGroup }) => {
   const groupIndex = parentGroup.findIndex(group => group.name.toLowerCase() === selectedGroup.name.toLowerCase());
   const requiredGroup = parentGroup[groupIndex];
+
+  const handleDeleteNote = (timestamp) => {
+    const updatedGroup = {
+      ...requiredGroup,
+      notes: requiredGroup.notes.filter(item => item.timestamp !== timestamp)
+    };
+
+    const updatedParentGroup = [...parentGroup];
+    updatedParentGroup[groupIndex] = updatedGroup;
+
+    setParentGroup(updatedParentGroup);
+  };
 
   return (
     <div className='notes-display'>
@@ -33,7 +45,10 @@ const NotesDisplay = ({ selectedGroup, parentGroup }) => {
               {item.content}
             </div>
             <div className="notes-content-date-time">
-              {dateWithFormat(item.timestamp)} &nbsp; <h2> • </h2> &nbsp; {timeWithFormat(item.timestamp)}
+              {dateWithFormat(item.timestamp)} &nbsp; 
+              <h2> • </h2> &nbsp; 
+              {timeWithFormat(item.timestamp)} &nbsp; 
+              <i className="fa-solid fa-trash" onClick={() => handleDeleteNote(item.timestamp)}></i>
             </div>
           </div>
         );

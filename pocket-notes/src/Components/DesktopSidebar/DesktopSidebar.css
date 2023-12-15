@@ -1,13 +1,11 @@
 .sidebar {
     position: relative;
-    /* border: 1px solid black; */
     height: 100%;
     width: 30%;
 }
 
 .sidebar-heading {
     position: relative;
-    /* border:1px solid red; */
     height: 15%;
     display: grid;
     place-items: center;
@@ -16,7 +14,6 @@
 }
 
 .group-names {
-    /* border: 1px solid red; */
     position: relative;
     height: 85%;
     overflow-y: auto;
